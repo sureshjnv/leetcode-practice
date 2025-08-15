@@ -1,18 +1,17 @@
 package com.leetcode.main;
 
-import com.leetcode.practice.medium.ContainerWithMostWater;
-import com.leetcode.practice.medium.ContiguousArray;
+import com.leetcode.practice.medium.SubArraySumEqualsK;
 
 public class Main {
 	
 	public static void main(String[] args) {
 		
 		
-		ContiguousArray contiguousArray = new ContiguousArray();
+		SubArraySumEqualsK subArraySumEqualsK = new SubArraySumEqualsK();
 		
-		int [] arr = new int [] {1,0,1,1,1,0,0,1,1};
+		int [] arr = new int [] {1,2,3,2,1};
 		
-		System.out.println(contiguousArray.contiguousArray(arr));
+		System.out.println(subArraySumEqualsK.subarraySum(arr,3));
 	}
 
 }
