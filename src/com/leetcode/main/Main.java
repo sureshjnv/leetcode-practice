@@ -1,17 +1,18 @@
 package com.leetcode.main;
 
 import com.leetcode.practice.medium.ContainerWithMostWater;
+import com.leetcode.practice.medium.ContiguousArray;
 
 public class Main {
 	
 	public static void main(String[] args) {
 		
 		
-		ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
+		ContiguousArray contiguousArray = new ContiguousArray();
 		
-		int [] height = new int [] {1,8,6,2,5,4,8,3,7};
+		int [] arr = new int [] {1,0,1,1,1,0,0,1,1};
 		
-		System.out.println(containerWithMostWater.maxArea(height));
+		System.out.println(contiguousArray.contiguousArray(arr));
 	}
 
 }
