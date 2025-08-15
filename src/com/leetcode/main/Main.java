@@ -1,17 +1,17 @@
 package com.leetcode.main;
 
-import com.leetcode.practice.medium.SubArraySumEqualsK;
+import com.leetcode.practice.easy.HappyNumber;
+import com.leetcode.practice.medium.FindDuplicateInLinearTimeAndConstantSpace;
 
 public class Main {
-	
+
 	public static void main(String[] args) {
-		
-		
-		SubArraySumEqualsK subArraySumEqualsK = new SubArraySumEqualsK();
-		
-		int [] arr = new int [] {1,2,3,2,1};
-		
-		System.out.println(subArraySumEqualsK.subarraySum(arr,3));
+
+		FindDuplicateInLinearTimeAndConstantSpace obj = new FindDuplicateInLinearTimeAndConstantSpace();
+
+		int[] arr = new int[] { 2, 4, 3, 2, 1 };
+
+		System.out.println(obj.findDuplicate(arr));
 	}
 
 }
