@@ -1,21 +1,24 @@
 package com.leetcode.main;
 
+import com.leetcode.practice.hard.LargestRectangleInHistogram;
 import com.leetcode.practice.medium.DailyTemperatures;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		DailyTemperatures obj = new DailyTemperatures();
+		LargestRectangleInHistogram obj = new LargestRectangleInHistogram();
 
-		int[] arr = new int[] { 1, 3, 4, 2, 5, 8, 6};
+		int[] arr = new int[] { 2, 1, 5, 6, 2, 3};
 		int[] arr2 = new int[] {4, 1, 2, 6, 5, 8};
 
-		int [] result = obj.dailyTemperatures(arr);
+		//int [] result = obj.largestRectangleArea(arr);
 		
-		for(int i : result) {
-			System.out.print(i+" ");
-		}
+		System.out.println( obj.largestRectangleArea(arr));
+		
+//		for(int i : result) {
+//			System.out.print(i+" ");
+//		}
 	}
 
 }
