@@ -1,6 +1,7 @@
 package com.leetcode.main;
 
 import com.leetcode.practice.medium.KokoEatingBananas;
+import com.leetcode.utility.TreeNode;
 
 public class Main {
 
@@ -19,6 +20,9 @@ public class Main {
 //		for(int[] i : res) {
 //			System.out.print(i[0]+" "+i[1]);
 //		}
+		
+		TreeNode root = TreeNode.insert(null, 3);
+		
 	}
 
 }
