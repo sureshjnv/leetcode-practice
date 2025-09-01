@@ -1,6 +1,10 @@
 package com.leetcode.utility;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
+
+import com.leetcode.practice.easy.DiameterOfBinaryTree;
 
 public class TreeNode {
 
@@ -144,16 +148,29 @@ public class TreeNode {
 			return search(root.left, key);
 		}
 	}
+	
+	public static int height(TreeNode root) {
+		if(root == null)
+			return 0;
+		
+		int left = height(root.left);
+		int right = height(root.right);
+		
+		return 1+Math.max(left, right);
+	}
 
 	public static void main(String[] args) {
 
-		int[] nodes = new int[] { 3, 2, 1, 5, 6, 4 };
+		DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
+		int[] nodes = new int[] { 3, 2, 1, 5, 6, 4 ,8,10, 7};
 		TreeNode root = buildBST(nodes);
 		inOrderIterativeTraversal(root);
 		preOrderIterativeTraversal(root);
 		postOrderIterativeTraversalTwoStack(root);
 		postOrderIterativeTraversalOneStack(root);
+		System.out.println("H : "+height(root));
 		System.out.println(search(root, 15));
+		System.out.println("D : "+diameterOfBinaryTree.diameterOfBinaryTree(root));
 
 	}
 
